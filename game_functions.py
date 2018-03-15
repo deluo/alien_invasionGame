@@ -28,11 +28,12 @@ def check_keyup_events(event,ship):
         ship.move_left = False
             
             
-def update_screen(al_settings,screen,ship,bullets):
+def update_screen(al_settings,screen,ship,alien,bullets):
     screen.fill(al_settings.bg_color)
     for bullet in bullets.sprites():
         bullet.draw_bullet()
     ship.blitme()
+    alien.blitme()
     pygame.display.flip()
     
     
