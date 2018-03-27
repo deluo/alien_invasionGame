@@ -1,1 +1,1 @@
-# python打飞机
+# python小游戏
